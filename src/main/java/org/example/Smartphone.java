@@ -36,9 +36,11 @@ public class Smartphone implements Radio, GPS {
 
     }
 
+
     public Contact getContactByName(String name){
 
-        for(int i=0;i>=contactList.size();i++){
+        // for (Contact c : contactList)
+        for(int i=0;i<contactList.size();i++){
 
             String listContactName = contactList.get(i).getName();
 
@@ -52,7 +54,7 @@ public class Smartphone implements Radio, GPS {
 
     public void removeContactByName(String name){
 
-        for(int i=0;i>=contactList.size();i++) {
+        for(int i=0;i<contactList.size();i++) {
 
             String listContactName = contactList.get(i).getName();
 

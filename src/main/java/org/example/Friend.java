@@ -4,8 +4,8 @@ public class Friend extends Contact{
 
     String phoneNumber;
 
-    public Friend(String phoneNumber) {
-        this.name = getName();
+    public Friend(String name, String phoneNumber) {
+        this.name = name;
         this.phoneNumber = phoneNumber;
     }
 
@@ -14,8 +14,8 @@ public class Friend extends Contact{
     @Override
     public String toString() {
         return "Friend{" +
-                ", name='" + name + '\'' +
-                "phoneNumber='" + phoneNumber + '\'' +
+                "name='" + name + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
 }
